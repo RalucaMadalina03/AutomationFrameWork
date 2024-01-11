@@ -1,7 +1,9 @@
 package Pages;
 
+import HelpMethods.AlertMethods;
 import HelpMethods.ElementMethods;
 import HelpMethods.FrameMethods;
+import HelpMethods.WindowMethods;
 import Pages.AlertFrameWindowPage.WindowsPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -9,8 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 public class BasePage {
     public WebDriver driver;
 
-    public WindowsMethod windowMethod;
-    public AlertMethod alertMethod;
+    public WindowMethods windowMethods;
+    public AlertMethods alertMethods ;
 
     public FrameMethods frameMethods;
     public ElementMethods elementMethods;
@@ -20,8 +22,9 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
-        windowMethod = new WindowsPage(driver);
-        alertMethod = new AlertMethod(driver);
+        windowMethods = new WindowsPage(driver);
+        alertMethods = new AlertMethods(driver);
+
         frameMethods = new FrameMethods(driver);
         elementMethods = new ElementMethods(driver);
 

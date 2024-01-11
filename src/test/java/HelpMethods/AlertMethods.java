@@ -10,7 +10,7 @@ import java.time.Duration;
 public class AlertMethods {
     private WebDriver driver;
 
-    public AlertMethod(WebDriver driver) {
+    public AlertMethods(WebDriver driver) {
         this.driver = driver;
     }
 

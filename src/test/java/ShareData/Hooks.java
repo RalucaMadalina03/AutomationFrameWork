@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.util.HashMap;
 
-public class Hooks {
+public class Hooks extends ShareData {
     public HashMap<String, String> testData;
     public String testName;
 

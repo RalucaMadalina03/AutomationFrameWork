@@ -1,6 +1,7 @@
 package ShareData;
 
 import Logger.LoggerUtility;
+import ShareData.Browser.BrowserFactory;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 

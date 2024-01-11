@@ -30,7 +30,7 @@ public class AlertPage extends BasePage {
         //  alertMethod.acceptAlert();
         elementMethods.clickElement(alertOkButton);
         LoggerUtility.info("The user clicks on alertaOkButton");
-        alertMethod.acceptAlert();
+        alertMethods.acceptAlert();
         LoggerUtility.info("The user clicks on acceptAlert");
 
 //        Alert alertOkButton = driver.switchTo().alert();
@@ -44,7 +44,7 @@ public class AlertPage extends BasePage {
         LoggerUtility.info("The user clicks on alertDelayButton");
 
 
-        alertMethod.acceptAlert();
+        alertMethods.acceptAlert();
         LoggerUtility.info("The user clicks on acceptAlert");
 
 //        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -57,7 +57,7 @@ public class AlertPage extends BasePage {
         elementMethods.clickElement(alertOkCancelButton);
         LoggerUtility.info("The user clicks on confirmButton");
 
-        alertMethod.cancelAlert();
+        alertMethods.cancelAlert();
         LoggerUtility.info("The user clicks on cancelAlert");
 
 
@@ -72,7 +72,7 @@ public class AlertPage extends BasePage {
         elementMethods.clickElement(alertValueButton);
         LoggerUtility.info("The user clicks on promtButton");
 
-        alertMethod.feelAlert(alertObject.getPromptAlertValue());
+        alertMethods.feelAlert(alertObject.getPromptAlertValue());
         LoggerUtility.info("The user fills the PromptAlertValue" + alertValueButton);
 
 

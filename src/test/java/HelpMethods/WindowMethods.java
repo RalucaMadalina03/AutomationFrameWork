@@ -9,7 +9,7 @@ public class WindowMethods {
 
     private WebDriver driver;
 
-    public WindowMethod(WebDriver driver) {
+    public WindowMethods(WebDriver driver) {
         this.driver = driver;
 
     }

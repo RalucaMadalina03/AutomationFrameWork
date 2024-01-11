@@ -23,13 +23,13 @@ public class WindowsPage extends BasePage {
         LoggerUtility.info("The user clicks on interractTab button");
 
 
-        windowMethod.switchtospecificWindow(1);
+        windowMethods.switchtospecificWindow(1);
         LoggerUtility.info("The user switches to a new tab");
 
-        windowMethod.clouseCurrentWindow();
+        windowMethods.clouseCurrentWindow();
         LoggerUtility.info("The user closes the current tab");
 
-        windowMethod.switchtospecificWindow(0);
+        windowMethods.switchtospecificWindow(0);
         LoggerUtility.info("The user switches back to the main tab");
 
 //        System.out.println("url: " + driver.getCurrentUrl());
@@ -44,13 +44,13 @@ public class WindowsPage extends BasePage {
         newWindowButton.click();
         LoggerUtility.info("The user clicks on interractWindow button");
 
-        windowMethod.switchtospecificWindow(1);
+        windowMethods.switchtospecificWindow(1);
         LoggerUtility.info("The user switches to a new window");
 
-        windowMethod.clouseCurrentWindow();
+        windowMethods.clouseCurrentWindow();
         LoggerUtility.info("The user closes the current window");
 
-        windowMethod.switchtospecificWindow(0);
+        windowMethods.switchtospecificWindow(0);
         LoggerUtility.info("The user switches back tot the main window");
 
 
