@@ -5,11 +5,11 @@
         <packages>
             <package name="Tests.*"/>
         </packages>
-        <!--        <classes>-->
-        <!--            <class name="Tests.WindowTest"></class>-->
-        <!--            <class name="Tests.FormTableTest"></class>-->
-        <!--            <class name="Tests.FrameTest"></class>-->
-        <!--        </classes>-->
+<!--                <classes>-->
+<!--                    <class name="Tests.WindowTest"></class>-->
+<!--                    <class name="Tests.FormTableTest"></class>-->
+<!--                    <class name="Tests.FrameTest"></class>-->
+<!--                </classes>-->
 
     </test>
 </suite>
