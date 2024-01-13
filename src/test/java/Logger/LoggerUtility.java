@@ -19,13 +19,13 @@ public class LoggerUtility {
 
     public static synchronized void startTestCase(String testName){
         ThreadContext.put("threadName",testName);
-        logger.info("==================== Execution started : "+ testName+"===========");
+        logger.info("==================== Execution started : "+ testName+ "===========");
     }
 
     //Metoda care logg-eaza oprirea unui test
 
     public static synchronized void endTestCase(String testName){
-        logger.info("=========== Execution fimished : " +testName+"================");
+        logger.info("=========== Execution finished : " +testName+ "================");
     }
     //Metoda care logg-eaza o actiune din test
 

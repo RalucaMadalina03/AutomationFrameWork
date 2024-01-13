@@ -10,7 +10,7 @@ public class BrowserFactory {
 
     public WebDriver getBrowserDriver(){
         Boolean cicd = Boolean.parseBoolean(System.getProperty("cicd"));
-        String browser =null;
+        String browser = null;
 
 
         // Trebuie sa decidem care este tipul de browser in momentul cand rulam pe local si remote

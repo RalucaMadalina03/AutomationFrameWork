@@ -28,7 +28,8 @@ public class Hooks extends ShareData {
     public void clearEnvironment(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
             LoggerUtility.error(result.getThrowable().getMessage());
-        } else {
+        }
+        else {
             clear();  // tot asa, apare clear fiindca avem extends ShareData
             LoggerUtility.endTestCase(testName); //apelam METODA STATICA pentru log-uri, nu avem nevoie de obiect
 

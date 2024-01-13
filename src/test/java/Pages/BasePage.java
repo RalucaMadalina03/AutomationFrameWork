@@ -22,7 +22,7 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
-        windowMethods = new WindowsPage(driver);
+        windowMethods = new WindowMethods(driver);
         alertMethods = new AlertMethods(driver);
 
         frameMethods = new FrameMethods(driver);

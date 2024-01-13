@@ -10,15 +10,10 @@ public class ShareData {
 
     //    @BeforeMethod
     public void setup(){
-//        driver = new ChromeDriver();
-//        driver.get("https://demoqa.com/");
-//        driver.manage().window().maximize();
-//
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//        LoggerUtility.info("The browser was opened with succes");
+
 
         driver = new BrowserFactory().getBrowserDriver();
-
+        LoggerUtility.info("The browser was opened with succes");
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,450)", "");
     }
