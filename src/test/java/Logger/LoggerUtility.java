@@ -66,7 +66,7 @@ public class LoggerUtility {
             for (String fileName : fileNames) {
                 if (fileName.contains(".log")) {
                     //System.out.println("Reading from " + fileName);
-
+//
                     // create instance of file from Name of
                     // the file stored in string Array
                     File f = new File(dir, fileName);
