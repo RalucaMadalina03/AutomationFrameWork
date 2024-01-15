@@ -21,7 +21,7 @@ public class Hooks extends ShareData {
         ProprietyUtility proprietyUtility = new ProprietyUtility(testName);
         testData = proprietyUtility.getAllData();
         LoggerUtility.startTestCase(testName);
-        setup();
+        setup(); // apare metoda de setup fiindca avem extends ShareData
     }
 
     @AfterMethod
