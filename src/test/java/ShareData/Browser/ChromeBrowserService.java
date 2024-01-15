@@ -17,17 +17,17 @@ public class ChromeBrowserService extends BaseBrowserService implements BrowserS
         ChromeOptions chromeOptions = (ChromeOptions) prepareBrowserOptions(cicd);
         driver = new ChromeDriver(chromeOptions);
         driver.get(getBrowserOptions().get("url"));
-//        driver.manage().window().maximize();
+      //  driver.manage().window().maximize();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        LoggerUtility.info("The browser was opened with succes");
+        LoggerUtility.info("The browser was opened with success");
 
     }
 
     @Override
     public void closeBrowser() {
         driver.quit();
-        LoggerUtility.info("The browser was closed with succes");
+        LoggerUtility.info("The browser was closed with success");
     }
 
     @Override

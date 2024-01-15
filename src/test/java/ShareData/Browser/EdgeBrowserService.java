@@ -9,9 +9,11 @@ import java.time.Duration;
 import java.util.HashMap;
 
 public class EdgeBrowserService extends BaseBrowserService implements BrowserService{
+
     private WebDriver driver;
     @Override
     public void openBrowser(Boolean cicd) {
+
         EdgeOptions edgeOptions = (EdgeOptions) prepareBrowserOptions(cicd);
         driver = new EdgeDriver(edgeOptions);
         driver.get(getBrowserOptions().get("url"));

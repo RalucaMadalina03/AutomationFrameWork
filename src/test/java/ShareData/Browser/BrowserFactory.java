@@ -10,7 +10,7 @@ public class BrowserFactory {
 
     public WebDriver getBrowserDriver(){
         Boolean cicd = Boolean.parseBoolean(System.getProperty("cicd"));
-        String browser = null;
+        String browser =null;
 
 
         // Trebuie sa decidem care este tipul de browser in momentul cand rulam pe local si remote
@@ -20,7 +20,7 @@ public class BrowserFactory {
             browser = System.getProperty("browser");
         }
         else{
-            HashMap<String,String> testData = new BaseBrowserService().getBrowserOptions();
+            HashMap<String, String> testData = new BaseBrowserService().getBrowserOptions();
             browser = testData.get("browser");
         }
 
@@ -32,7 +32,8 @@ public class BrowserFactory {
                 ChromeBrowserService chromeBrowserService = new ChromeBrowserService();
                 chromeBrowserService.openBrowser(cicd);
                 return chromeBrowserService.getDriver();
-            case "edge":
+
+                case "edge":
                 EdgeBrowserService edgeBrowserService = new EdgeBrowserService();
                 edgeBrowserService.openBrowser(cicd);
                 return edgeBrowserService.getDriver();
