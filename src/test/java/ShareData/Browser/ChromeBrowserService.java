@@ -33,10 +33,10 @@ public class ChromeBrowserService extends BaseBrowserService implements BrowserS
     @Override
     public Object prepareBrowserOptions(Boolean cicd) {
         // ProprietyUtility proprietyUtility = new ProprietyUtility("Browser");
-        HashMap<String,String> testData = getBrowserOptions();
+git         HashMap<String,String> testData = getBrowserOptions();
         ChromeOptions chromeOptions = new ChromeOptions();
         if (cicd){
-            chromeOptions.addArguments("headless");
+            chromeOptions.addArguments("--headless");
         }
         if (!testData.get("headless").isEmpty()){
             chromeOptions.addArguments(testData.get("headless"));
