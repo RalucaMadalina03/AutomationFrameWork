@@ -36,7 +36,7 @@ public class ChromeBrowserService extends BaseBrowserService implements BrowserS
         HashMap<String,String> testData = getBrowserOptions();
         ChromeOptions chromeOptions = new ChromeOptions();
         if (cicd){
-            chromeOptions.addArguments("--headless");
+            chromeOptions.addArguments("headless");
         }
         if (!testData.get("headless").isEmpty()){
             chromeOptions.addArguments(testData.get("headless"));
